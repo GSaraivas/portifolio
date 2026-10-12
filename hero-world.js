@@ -64,7 +64,8 @@ const WORLD_SETTINGS = {
     function sync() {
         if (!timeline) return;
         const time = timeline.time();
-        const current = checkpoints.find(p => time >= p.start && time <= p.end);
+        const current = checkpoints.find(p => time >= p.start && time <= p.end)
+            ?? (timeline.progress() >= 1 ? checkpoints[checkpoints.length - 1] : undefined);
         const active = current?.card ?? -1;
         root.classList.toggle('hw-exploring', time > WORLD_SETTINGS.holdDuration);
         cards.forEach((card, i) => {
@@ -90,4 +91,3 @@ const WORLD_SETTINGS = {
     window.addEventListener('pageshow', event => { if (event.persisted) build(); });
     window.addEventListener('pagehide', () => { clearTimeout(timer); reset(); });
 })();
-
