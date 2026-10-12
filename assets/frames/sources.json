@@ -1,0 +1,50 @@
+[
+  {
+    "file": "00-overview.webp",
+    "width": 1672,
+    "height": 941,
+    "bytes": 219606,
+    "quality": 80,
+    "source": "Praça Diorama ao Entardecer.png"
+  },
+  {
+    "file": "01-confeitaria.webp",
+    "width": 1672,
+    "height": 941,
+    "bytes": 221228,
+    "quality": 84,
+    "source": "Café Pâtisserie Rosa ao Entardecer.png"
+  },
+  {
+    "file": "02-beauty-studio.webp",
+    "width": 1672,
+    "height": 941,
+    "bytes": 224752,
+    "quality": 84,
+    "source": "Pavilhão Encantado ao Entardecer.png"
+  },
+  {
+    "file": "03-nail.webp",
+    "width": 1672,
+    "height": 941,
+    "bytes": 210706,
+    "quality": 84,
+    "source": "Boutique de Beleza na Praça Dourada.png"
+  },
+  {
+    "file": "04-mario.webp",
+    "width": 1672,
+    "height": 941,
+    "bytes": 235738,
+    "quality": 84,
+    "source": "Cinema Estrelado na Praça Dourada.png"
+  },
+  {
+    "file": "05-aura.webp",
+    "width": 1672,
+    "height": 941,
+    "bytes": 244860,
+    "quality": 88,
+    "source": "Pavilhão Luminoso na Praça Miniatura.png"
+  }
+]
