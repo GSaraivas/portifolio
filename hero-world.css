@@ -607,10 +607,9 @@
     padding: 12px 16px;
   }
   .hw-ready .hw-scene:first-child .hw-frame {
-    object-fit: contain;
-    object-position: center bottom;
-    background: #f7ead9;
-    height: calc(100% - 70px);
+    object-fit: cover;
+    object-position: 58% center;
+    height: 100%;
   }
   .hw-markers {
     top: auto;
@@ -736,5 +735,11 @@
   }
   .hw-marker-aura {
     top: 84%;
+  }
+}
+@media (max-width: 700px) {
+  .hw-markers,
+  .hero-world:not(.hw-ready) .hw-markers {
+    display: none;
   }
 }
