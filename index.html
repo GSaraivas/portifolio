@@ -5,26 +5,54 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#f7ead9">
-    <title>Gabriel Saraiva — Landing pages com uma nova perspectiva</title>
+    <title>Gabriel Saraiva | Desenvolvedor Front-End e Landing Pages</title>
     <meta name="description"
-        content="Landing pages com design e desenvolvimento por Gabriel Saraiva. Explore cinco projetos e converse sobre a próxima página do seu negócio.">
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preload" href="assets/fonts/Unna-Bold.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="assets/frames/00-opening.webp" as="image" type="image/webp">
-    <link rel="preload" href="assets/frames/01-confeitaria.webp" as="image" type="image/webp">
-    <link rel="preload" href="assets/frames/02-beauty-studio.webp" as="image" type="image/webp">
-    <link rel="preload" href="assets/frames/03-nail.webp" as="image" type="image/webp">
-    <link rel="preload" href="assets/frames/04-mario.webp" as="image" type="image/webp">
-    <link rel="preload" href="assets/frames/05-aura.webp" as="image" type="image/webp">
-    <link rel="stylesheet" href="hero-world.css">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script defer src="app.js"></script>
-    <script defer src="hero-world.js"></script>
+        content="Portfólio de Gabriel Saraiva, desenvolvedor front-end em São Paulo. Sites e landing pages para negócios, interfaces responsivas e quatro projetos para explorar.">
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/hero-world.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="canonical" href="https://gsaraivas.github.io/portifolio/">
+    <meta property="og:url" content="https://gsaraivas.github.io/portifolio/">
+    <meta name="author" content="Gabriel Saraiva">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Gabriel Saraiva | Desenvolvedor Front-End">
+    <meta property="og:description"
+        content="Portfólio de Gabriel Saraiva, desenvolvedor front-end em São Paulo. Sites e landing pages para negócios, interfaces responsivas e quatro projetos para explorar.">
+    <meta name="twitter:card" content="summary">
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Gabriel Saraiva","jobTitle":"Desenvolvedor Front-End","email":"gabrielsaraiva587@gmail.com","sameAs":["https://github.com/gsaraivas","https://www.linkedin.com/in/gabriel-saraiva-da-silva-596814218/"]}</script>
+    <script defer src="./assets/vendor/gsap.min.js"></script>
+    <script defer src="./assets/vendor/ScrollTrigger.min.js"></script>
+    <script defer src="./js/app.js"></script>
+    <script defer src="./js/hero-world.js"></script>
 </head>
 
 <body>
+    <noscript>
+        <style>
+            .hw-frame {
+                display: none
+            }
+
+            .hw-scene:not(:first-child),
+            .hw-final,
+            .hw-counter {
+                display: none
+            }
+
+            .hw-intro {
+                margin: 0;
+                padding: 40px 6%;
+                box-shadow: none
+            }
+
+            .project-image img {
+                display: none
+            }
+        </style>
+    </noscript>
     <svg class="sprite" xmlns="http://www.w3.org/2000/svg">
         <symbol id="arrow" viewBox="0 0 24 24">
             <path d="M4 12h15M13 5l7 7-7 7" />
@@ -40,14 +68,14 @@
     <a class="skip" href="#conteudo">Ir para o conteúdo</a>
 
     <main id="conteudo">
-        <section class="hero-world" id="inicio" aria-labelledby="hw-title">
+        <section class="hero-world hw-pending" id="inicio" aria-labelledby="hw-title">
             <div class="hw-sticky">
                 <div class="hw-top"><a class="hw-brand" href="#inicio">Gabriel Saraiva<span>.</span></a>
                     <nav class="hw-opening-nav" aria-label="Navegação principal"><a href="#projetos">Projetos</a><a
-                            href="#processo">Como trabalho</a></nav>
+                            href="#sobre">Sobre mim</a><a href="#processo">Como trabalho</a></nav>
                     <div class="hw-top-right"><a class="hw-budget" href="#contato">Pedir orçamento <span
                                 aria-hidden="true">→</span></a><a href="#projetos">Pular percurso</a><span
-                            class="hw-counter" aria-label="Espaço 1 de 5">01 / 05</span></div>
+                            class="hw-counter" aria-label="Percurso visual: espaço 1 de 5">01 / 05</span></div>
                 </div>
                 <div class="hw-scenes">
                     <figure class="hw-scene"><img class="hw-frame" src="assets/frames/00-opening.webp" width="1733"
@@ -55,13 +83,16 @@
                             alt="Visão geral da praça em miniatura, com cinco pavilhões ligados por caminhos de cobre.">
                         <figcaption class="hw-card hw-intro">
                             <div class="hw-opening-copy">
-                                <h1 id="hw-title">Uma nova<br>perspectiva para<br>o seu negócio<span>.</span></h1>
-                                <p>Landing pages com design e desenvolvimento por Gabriel Saraiva.</p><a
-                                    class="hw-button"
+                                <span class="profile-eyebrow">Desenvolvedor Front-End · São Paulo, SP</span>
+                                <h1 id="hw-title">Interfaces com<br>identidade. Sites<br>com propósito<span>.</span>
+                                </h1>
+                                <p>Sou Gabriel Saraiva. Desenvolvo sites e landing pages que conectam identidade visual,
+                                    navegação e contato com o seu negócio.</p><a class="hw-button"
                                     href="https://wa.me/5511934848849?text=Ol%C3%A1%2C%20Gabriel!%20Quero%20um%20or%C3%A7amento%20de%20landing%20page."
                                     target="_blank" rel="noopener"><svg aria-hidden="true">
                                         <use href="#chat" />
-                                    </svg>Conversar no WhatsApp <span aria-hidden="true">→</span></a>
+                                    </svg>Conversar no WhatsApp <span aria-hidden="true">→</span></a><a
+                                    class="profile-project-link" href="#projetos">Explorar os 4 projetos ↓</a>
                             </div>
                             <nav class="hw-markers" aria-label="Projetos na maquete"><a class="hw-marker hw-marker-cake"
                                     href="https://gsaraivas.github.io/Cakes-MA-Confeitaria/" target="_blank"
@@ -146,7 +177,7 @@
                 </div>
                 <div class="hw-vignette" aria-hidden="true"></div>
                 <div class="hw-bottom"><span class="hw-hint">Role para explorar ↓</span><span>Cenários ilustrativos ·
-                        Projetos reais</span></div>
+                        Projetos de portfólio</span></div>
                 <div class="hw-progress" aria-hidden="true"><span></span></div>
             </div>
             <nav class="hw-sr-only hw-access" aria-label="Todos os projetos do percurso">
@@ -164,6 +195,108 @@
                 </ul>
             </nav>
         </section>
+        <section class="projects section" id="projetos" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <h2 id="projects-title">Cada projeto,<br> um universo próprio<span>.</span></h2>
+                <p>Conheça quatro projetos de moda, estética automotiva, odontologia e floricultura.</p>
+            </div>
+            <p class="portfolio-note">Projetos demonstrativos e conceituais desenvolvidos para portfólio. Não
+                representam, necessariamente, empresas em operação ou trabalhos contratados.</p>
+            <div class="project-grid">
+                <article class="project project-new" id="noir">
+                    <a class="project-image project-cover cover-noir" href="https://gsaraivas.github.io/NOIR-DISTRICT/"
+                        target="_blank" rel="noopener noreferrer" aria-label="Visitar NOIR DISTRICT, abre em nova aba">
+                        <div class="cover-content" aria-hidden="true"><small>01 / URBAN
+                                ESSENTIALS</small><strong>NOIR<br>DISTRICT</strong><em>PROJETO DEMONSTRATIVO</em></div>
+                        <span>Explorar site<svg aria-hidden="true">
+                                <use href="#out" />
+                            </svg></span>
+                    </a>
+                    <div class="project-meta"><span class="new-badge">Novo no portfólio</span><span>Moda &
+                            streetwear</span></div>
+                    <div class="project-title">
+                        <h3>NOIR DISTRICT</h3>
+                    </div>
+                    <p>Vitrine de moda com coleções, catálogo filtrável e consulta de produtos. A composição editorial
+                        apresenta a identidade de uma marca fictícia.</p>
+                    <ul class="project-features" aria-label="Destaques de NOIR DISTRICT">
+                        <li>Catálogo filtrável</li>
+                        <li>Direção editorial</li>
+                        <li>Coleções</li>
+                    </ul>
+                </article>
+                <article class="project project-new" id="auto">
+                    <a class="project-image project-cover cover-auto" href="https://gsaraivas.github.io/Estetica-auto/"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="Visitar Estética Automotiva, abre em nova aba">
+                        <div class="cover-content" aria-hidden="true"><small>02 / CUIDADO EM CADA
+                                DETALHE</small><strong>PRECISION<br>DETAILING</strong><em>PROJETO DEMONSTRATIVO</em>
+                        </div>
+                        <span>Explorar site<svg aria-hidden="true">
+                                <use href="#out" />
+                            </svg></span>
+                    </a>
+                    <div class="project-meta"><span class="new-badge">Novo no portfólio</span><span>Serviços
+                            automotivos</span></div>
+                    <div class="project-title">
+                        <h3>Estética Automotiva</h3>
+                    </div>
+                    <p>Modelo para apresentar serviços de limpeza, proteção e acabamento. Inclui guia de cuidados e
+                        simulação de orçamento, sem envio de mensagens.</p>
+                    <ul class="project-features" aria-label="Destaques de Estética Automotiva">
+                        <li>Serviços organizados</li>
+                        <li>Simulação de orçamento</li>
+                        <li>FAQ</li>
+                    </ul>
+                </article>
+                <article class="project project-new" id="dental">
+                    <a class="project-image project-cover cover-dental"
+                        href="https://gsaraivas.github.io/Dentes-Perfeitos/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Visitar Aura Dental, abre em nova aba">
+                        <div class="cover-content" aria-hidden="true"><small>03 / ODONTOLOGIA
+                                CONTEMPORÂNEA</small><strong>Aura<br>Dental</strong><em>PROJETO DEMONSTRATIVO</em></div>
+                        <span>Explorar site<svg aria-hidden="true">
+                                <use href="#out" />
+                            </svg></span>
+                    </a>
+                    <div class="project-meta"><span class="new-badge">Novo no portfólio</span><span>Odontologia</span>
+                    </div>
+                    <div class="project-title">
+                        <h3>Aura Dental</h3>
+                    </div>
+                    <p>Conceito odontológico com tratamentos, equipe ilustrativa e galeria de ambientes. Uma
+                        apresentação em tons claros, com interações para explorar os conteúdos.</p>
+                    <ul class="project-features" aria-label="Destaques de Aura Dental">
+                        <li>Tratamentos</li>
+                        <li>Galeria interativa</li>
+                        <li>Equipe ilustrativa</li>
+                    </ul>
+                </article>
+                <article class="project project-new" id="flora">
+                    <a class="project-image project-cover cover-flora" href="https://gsaraivas.github.io/Flora/"
+                        target="_blank" rel="noopener noreferrer" aria-label="Visitar Flora Atelier, abre em nova aba">
+                        <div class="cover-content" aria-hidden="true"><small>04 / EDIÇÃO
+                                BOTÂNICA</small><strong>flora<br><i>atelier</i></strong><em>PROJETO DEMONSTRATIVO</em>
+                        </div>
+                        <span>Explorar site<svg aria-hidden="true">
+                                <use href="#out" />
+                            </svg></span>
+                    </a>
+                    <div class="project-meta"><span class="new-badge">Novo no portfólio</span><span>Floricultura</span>
+                    </div>
+                    <div class="project-title">
+                        <h3>Flora Atelier</h3>
+                    </div>
+                    <p>Vitrine floral com coleções, produtos e ocasiões especiais. A narrativa ao rolar a página e a
+                        composição em camadas 2.5D convidam a explorar os arranjos.</p>
+                    <ul class="project-features" aria-label="Destaques de Flora Atelier">
+                        <li>Narrativa no scroll</li>
+                        <li>Composição 2.5D</li>
+                        <li>Coleções florais</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
         <section class="process section" id="processo" aria-labelledby="process-title">
             <h2 id="process-title">Do briefing<br> à publicação<span>.</span></h2>
             <ol>
@@ -180,87 +313,6 @@
                     <p>Transformo a proposta em uma página responsiva, pronta para publicar.</p>
                 </li>
             </ol>
-        </section>
-        <section class="projects section" id="projetos" aria-labelledby="projects-title">
-            <div class="section-heading">
-                <h2 id="projects-title">Cada projeto,<br> um universo próprio<span>.</span></h2>
-                <p>Da delicadeza de uma confeitaria a uma experiência cinematográfica. Conheça as páginas e explore cada
-                    detalhe.</p>
-            </div>
-            <div class="project-grid">
-                <article class="project" id="cakes"><a class="project-image"
-                        href="https://gsaraivas.github.io/Cakes-MA-Confeitaria/" target="_blank"
-                        rel="noopener noreferrer" aria-label="Visitar Cakes’MA Confeitaria, abre em nova aba"><img
-                            src="assets/cakes.jpg" width="1440" height="900"
-                            alt="Captura real da landing page Cakes’MA, com um bolo e identidade em tons delicados."
-                            loading="lazy"><span>Explorar site<svg aria-hidden="true">
-                                <use href="#out" />
-                            </svg></span></a>
-                    <div class="project-title">
-                        <h3>Cakes’MA Confeitaria</h3><span>Confeitaria</span>
-                    </div>
-                    <p>Produtos, criações e um caminho direto para encomendar. Uma apresentação acolhedora para o
-                        universo artesanal.</p>
-                </article>
-                <article class="project" id="beauty"><a class="project-image"
-                        href="https://gsaraivas.github.io/Beauty-Studio/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Visitar Beauty Studio, abre em nova aba"><img src="assets/beauty.jpg" width="1440"
-                            height="900"
-                            alt="Captura real do site Aura Beauty Studio e sua apresentação de serviços de beleza."
-                            loading="lazy"><span>Explorar site<svg aria-hidden="true">
-                                <use href="#out" />
-                            </svg></span></a>
-                    <div class="project-title">
-                        <h3>Beauty Studio</h3><span>Beleza</span>
-                    </div>
-                    <p>Uma vitrine para serviços, ambiente e cuidados, com o agendamento sempre ao alcance do visitante.
-                    </p>
-                </article>
-                <article class="project" id="nails"><a class="project-image"
-                        href="https://gsaraivas.github.io/Ana-NailDesigner/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Visitar Ana NailDesigner, abre em nova aba"><img src="assets/nails.jpg" width="1440"
-                            height="900"
-                            alt="Captura real da página Ana Rosa Nail Designer, com fotografia de unhas e chamada para agendamento."
-                            loading="lazy"><span>Explorar site<svg aria-hidden="true">
-                                <use href="#out" />
-                            </svg></span></a>
-                    <div class="project-title">
-                        <h3>Ana NailDesigner</h3><span>Nail design</span>
-                    </div>
-                    <p>Serviços e trabalhos em destaque, com uma identidade delicada e contato direto para agendar.</p>
-                </article>
-                <article class="project" id="aura"><a class="project-image"
-                        href="https://gsaraivas.github.io/Studio-Aura/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Visitar Studio Aura, abre em nova aba"><img src="assets/aura.jpg" width="1440"
-                            height="900"
-                            alt="Captura real da landing page Studio Aura, dedicada à arquitetura de interiores."
-                            loading="lazy"><span>Explorar site<svg aria-hidden="true">
-                                <use href="#out" />
-                            </svg></span></a>
-                    <div class="project-title">
-                        <h3>Studio Aura</h3><span>Arquitetura</span>
-                    </div>
-                    <p>Imagens, matéria e espaço em uma apresentação editorial de arquitetura de interiores.</p>
-                </article>
-                <article class="project cinematic" id="mario"><a class="project-image"
-                        href="https://gsaraivas.github.io/Super-Mario-Galaxy/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Visitar projeto conceitual Super Mario Galaxy, abre em nova aba"><img
-                            src="assets/mario.jpg" width="1440" height="900"
-                            alt="Captura real da landing page temática Super Mario Galaxy."
-                            loading="lazy"><span>Explorar site<svg aria-hidden="true">
-                                <use href="#out" />
-                            </svg></span></a>
-                    <div class="cinematic-copy">
-                        <h3>Super Mario<br> Galaxy<span>.</span></h3>
-                        <p>Uma exploração de narrativa visual, personagens e interação em uma landing page temática.</p>
-                        <p class="note">Projeto conceitual para fins educacionais. Sem vínculo com a Nintendo.</p><a
-                            class="text-link" href="https://gsaraivas.github.io/Super-Mario-Galaxy/" target="_blank"
-                            rel="noopener noreferrer">Conhecer o projeto<svg aria-hidden="true">
-                                <use href="#out" />
-                            </svg></a>
-                    </div>
-                </article>
-            </div>
         </section>
         <section class="offer section">
             <div>
@@ -283,33 +335,50 @@
                 </li>
             </ul>
         </section>
-        <section class="about section">
-            <h2>Prazer, Gabriel<span>.</span></h2>
+        <section class="about section" id="sobre" aria-labelledby="about-title">
+            <div><span class="profile-eyebrow">Quem desenvolve</span>
+                <h2 id="about-title">Prazer,<br>Gabriel Saraiva<span>.</span></h2>
+                <p class="profile-location">Desenvolvedor Front-End · São Paulo, SP</p>
+            </div>
             <div>
-                <p>Sou desenvolvedor front-end e uno design, tecnologia e atenção à experiência de quem navega.</p>
-                <p>Crio páginas para apresentar negócios com clareza e personalidade. Você conversa comigo desde as
-                    primeiras ideias até os ajustes da entrega.</p><a class="text-link"
-                    href="https://github.com/GSaraivas" target="_blank" rel="noopener noreferrer">Conheça meu GitHub<svg
-                        aria-hidden="true">
+                <p>Sou desenvolvedor front-end com foco em sites e landing pages para negócios. Trabalho com HTML, CSS e
+                    JavaScript, unindo organização de conteúdo, identidade visual e atenção à experiência de quem
+                    navega.</p>
+                <p>Minha experiência anterior em assistência técnica e atendimento contribui para uma comunicação
+                    próxima e para entender o que cada projeto precisa. Sigo ampliando meus conhecimentos em React,
+                    Next.js e TypeScript.</p><a class="text-link" href="https://github.com/GSaraivas" target="_blank"
+                    rel="noopener noreferrer">Código no GitHub<svg aria-hidden="true">
                         <use href="#out" />
-                    </svg></a>
+                    </svg></a><a class="text-link profile-linkedin"
+                    href="https://www.linkedin.com/in/gabriel-saraiva-da-silva-596814218/" target="_blank"
+                    rel="noopener noreferrer">Perfil no LinkedIn ↗</a>
+                <p class="availability">Aberto a projetos freelance e oportunidades como desenvolvedor front-end júnior.
+                </p>
+                <ul class="skill-list" aria-label="Tecnologias e práticas">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>GSAP</li>
+                    <li>Git & GitHub</li>
+                    <li>Design responsivo</li>
+                </ul>
             </div>
         </section>
         <section class="contact section" id="contato" aria-labelledby="contact-title">
             <div>
                 <h2 id="contact-title">Vamos criar<br> o seu próximo<br> universo<span>?</span></h2>
-                <p>Me conte sobre seu negócio e o que você quer alcançar. Vamos encontrar a melhor forma de apresentar
-                    sua ideia.</p><a class="contact-email"
+                <p>Quer apresentar seu negócio ou conversar sobre uma oportunidade profissional? Fale comigo pelo
+                    WhatsApp, e-mail ou LinkedIn.</p><a class="contact-email"
                     href="mailto:gabrielsaraiva587@gmail.com">gabrielsaraiva587@gmail.com</a><a class="contact-phone"
                     href="https://wa.me/5511934848849" target="_blank" rel="noopener noreferrer">(11) 93484-8849</a>
             </div>
             <form id="briefing"><label for="name">Como posso te chamar?</label><input id="name" name="name"
                     autocomplete="given-name" placeholder="Seu nome" maxlength="100" required><label for="business">Qual
-                    é o seu negócio?</label><input id="business" name="business"
-                    placeholder="Ex.: confeitaria, estúdio, consultoria..." maxlength="180" required><label for="idea">O
-                    que você imagina para a página?</label><textarea id="idea" name="idea" rows="3"
-                    placeholder="Conte um pouco da sua ideia" maxlength="1500"></textarea><button class="button"
-                    type="submit">Levar minha ideia ao WhatsApp<svg aria-hidden="true">
+                    é o negócio ou a empresa?</label><input id="business" name="business"
+                    placeholder="Nome do negócio ou empresa" maxlength="180" required><label for="idea">Sobre o que
+                    vamos conversar?</label><textarea id="idea" name="idea" rows="3"
+                    placeholder="Conte sobre o projeto ou a oportunidade" maxlength="1500"></textarea><button
+                    class="button" type="submit">Conversar no WhatsApp<svg aria-hidden="true">
                         <use href="#arrow" />
                     </svg></button>
                 <p class="form-note">Abre uma conversa com a mensagem pronta. Você revisa e envia pelo WhatsApp.</p>
@@ -342,7 +411,7 @@
         </section>
     </main>
     <footer class="footer"><a class="brand" href="#inicio">Gabriel Saraiva<span>.</span></a>
-        <p>Design e desenvolvimento com uma nova perspectiva.</p><a href="#inicio">Voltar ao início<svg
+        <p>Desenvolvimento front-end · Sites e landing pages.</p><a href="#inicio">Voltar ao início<svg
                 aria-hidden="true">
                 <use href="#arrow" />
             </svg></a><small>© 2026 Gabriel Saraiva</small>
